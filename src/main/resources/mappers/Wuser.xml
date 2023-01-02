@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.springbootwinter202212.repository.WuserRepository">
+    <insert id="saveEmployee" parameterType="com.study.springbootwinter202212.web.dto.WuserDto"
+            useGeneratedKeys="true" keyProperty="wuserId">
+        insert into emp_mst
+        values (#{wuserId}, #{wuserPassword}, #{wuserName}, #{wuserPhone})
+    </insert>
+</mapper>

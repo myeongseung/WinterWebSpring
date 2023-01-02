@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Builder
-public class Wuser {
+public class WuserDto {
     private String wuserId;
     private String wuserPassword;
     private String wuserName;
