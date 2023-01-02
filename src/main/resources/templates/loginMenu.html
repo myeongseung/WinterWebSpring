@@ -1,10 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>o
+<head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin: 100px auto;
+            border: 1px solid #dbdbdb;
+            padding: 30px;
+            width: 500px;
+        }
+
+        .register-title {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .register-inputs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-bottom: 15px;
+            width: 80%;
+        }
+
+        .register-text {
+            text-align: center;
+            margin-bottom: 5px;
+            border: 1px solid #dbdbdb;
+            outline: none;
+
+            padding: 10px;
+            width: 100%;
+
+            cursor: pointer;
+        }
+
+        .register-text:focus {
+            box-shadow: 0px 0px 10px 1px #dbdbdb;
+        }
+
+        .success {
+            border: 1px solid #00dd4d;
+        }
+
+        .error-msg {
+            color: rgb(255, 73, 23);
+            font-size: 11px;
+        }
+
+        .register-button {
+            border: 1px solid #dbdbdb;
+            padding: 10px;
+            width: 80%;
+            background-color: black;
+
+            color: white;
+            font-weight: 600;
+
+            cursor: pointer;
+        }
+
+        .register-button:active {
+            background-color: #303030;
+            box-shadow: 0px 0px 10px 1px #dbdbdb;
+        }
+    </style>
 </head>
 <body>
+
+<div id="container">
+    <h1 class="register-title">로그인</h1>
+    <div class="register-inputs">
+        <input type="text" class="register-text" placeholder="아이디">
+        <div class="error-msg">
+
+        </div>
+    </div>
+    <div class="register-inputs">
+        <input type="password" class="register-text" placeholder="비밀번호">
+        <div class="error-msg">
+
+        </div>
+    </div>
+    <button class="register-button">로그인</button>
+</div>
 
 </body>
 </html>
